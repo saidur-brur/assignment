@@ -18,7 +18,7 @@ EM(data1, 6, 4, 3)
 
 
 #=====2=====
-set.seed(1810052)
+set.seed(1810048)
 mis = 2
 N = 10
 lambda2 = 9
@@ -48,7 +48,7 @@ EM(pois2, 10)
 
 
 #=====3=====
-set.seed(1810052)
+set.seed(1810048)
 EM = function(N, lambda, mis) {
   data = rpois(N, lambda)
   data[19:20] = NA
@@ -73,7 +73,7 @@ EM(20, 15, 2)
 
 
 #=====4=====
-set.seed(1810052)
+set.seed(1810048)
 EM = function(N, lambda, mis) {
   data = rexp(N, rate = 1 / lambda)
   data[5:6] = NA
